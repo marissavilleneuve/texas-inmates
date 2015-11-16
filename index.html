@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>2 Rows Frames Layout (header frame)</title>
+		<style type="text/css">
+		
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		#header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100px; 
+			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #BCCE98;
+		}
+        
+		#footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50px; 
+			overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #BCCE98;
+		}
+        
+		#logo {
+			padding:10px;
+			float:left;
+		}
+		
+		main {
+			position: fixed;
+			top: 100px; /* Set this to the height of the header */
+			left: 0; 
+			right: 0;
+			bottom: 0;
+			overflow: auto; 
+			background: #fff;
+		}
+		
+		.innertube {
+			margin: 15px; /* Provides padding for the content */
+		}
+		
+		p {
+			color: #555;
+		}
+
+		/* Menu */
+		nav { 
+			margin:0 auto; 
+			padding:0; 
+			float:right;
+		}
+		nav ul { 
+			list-style:none; 
+			padding:0; 
+			float:left;
+		}
+		nav ul li { 
+			margin:0; 
+			padding:0 0 0 8px; 
+			float:left;
+		}
+		nav ul li a { 
+			display:block; 
+			margin:0; 
+			padding:8px 20px; 
+			color:darkgreen; 
+			text-decoration:none;
+		}
+		nav ul li.active a, #top-nav ul li a:hover { 
+			color:#d3d3f9;
+		}
+				
+		/*IE6 fix*/
+		* html body{
+			padding: 100px 0 0 0; /* Set the first value to the height of the header */
+		}
+		
+		* html main{ 
+			height: 100%; 
+			width: 100%; 
+		}
+		
+		</style>	
+	
+	</head>
+	
+	<body>		
+
+		<header id="header">
+			<div id="logo">
+				<h1>The Last Statements of Texas Death Row Inmates</h1>
+			</div>
+		</header>
+				
+		<main>
+			<div class="innertube">
+				
+				<h1>About the data</h1>
+				<p></p>
+                
+                <h1>The Demographics</h1>
+				<p>insert graphs from google and raw about the data group as a whole</p>
+                
+                <h1>What do people on death row say?</h1>
+				<p>insert our word clouds with some talk about what we can infer from them</p>
+                
+                <h1>Our choices with the data</h1>
+				<p>The decision to separate it by race, use of word clouds to analyze last statements and more traditional graphs for demographic data</p>
+                
+                <h1>Our choices about design</h1>
+				<p>Why this layout?  Why these colours? (we should come up with a colour scheme)</p>
+				
+			</div>
+		</main>
+        
+        <footer id="footer">
+			<div class="innertube">
+				<p>A DIGH 5000 Data Visualization by Elise Bigley, Jessie Raymond, and Marissa Villeneuve.</p>
+			</div>
+		</footer>	
+	
+	</body>
+</html>
